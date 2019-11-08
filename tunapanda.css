@@ -1,0 +1,340 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+/*MY CODE*/
+
+*{box-sizing: border-box;}
+	body{
+		margin: 0;
+		padding: 0;
+		font-family: monospace;
+		background-image: url(images/bk-1.jpg);
+	}
+	.preload{
+		width: 100%;
+		height: 100%;
+		background: transparent;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+	.logo{
+		width: 300px;
+		height: 70px;
+		margin: 150px auto 50px auto;
+		font-size: 70px;
+		text-align: center;
+		text-shadow: -1px 2px 2px #000;
+		color: azure;
+
+	}
+	.loader-frame{
+		width: 70px;
+		height: 70px;
+		position: relative;
+		margin: auto;
+	}
+	.loader1 ,.loader2{
+		position: absolute;
+		border: 5px solid transparent;
+		border-radius: 50%;
+	}
+	.loader1{
+		height: 70px;
+		width: 70px;
+		border-top: 5px solid azure;
+		border-bottom: 5px solid azure;
+		animation: clockwisespin 2s linear 3;
+	}
+	.loader2{
+		height: 60px;
+		width: 60px;
+		border-left: 5px solid darkturquoise;
+		border-right: 5px solid darkturquoise;
+		top: 5px;
+		left: 5px;
+		animation: anticlockwisespin 2s linear 3;
+	}
+	.loader3{
+		height: 40px;
+		width: 40px;
+		border-left: 5px solid darkturquoise;
+		border-right: 5px solid darkturquoise;
+		top: 5px;
+		left: 5px;
+		animation: anticlockwisespin 2s linear 3;
+	}
+
+	@keyframes clockwisespin{
+		from{transform: rotate(0deg);}
+		to{transform: rotate(360deg);}
+	}
+	@keyframes anticlockwisespin{
+		from{transform: rotate(0deg);}
+		to{transform: rotate(-360deg);}
+	}
+	@keyframes fadeout{
+		from{opacity: 1;}
+		to{opacity: 0;}
+	}
+
+/************************** Welcome Page Styles *******************************/
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Gayathri|Manjari|Maven+Pro:500&display=swap');
+
+
+  *{
+   /*font-family: 'Gayathri', sans-serif;*/
+font-family: 'Manjari', sans-serif;
+/*font-family: 'Dancing Script', cursive;*/
+    font-size: inherit;
+  }
+  body{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .banner-top , .banner-content-top{
+    background-color: #000;
+    width: 100%;
+    height:75px;
+    justify-content:left;
+    font-family: Arial;
+    color: #000;
+    top: 0;
+  }
+  .logo{
+    float:left;
+    margin-top:-1px;
+    margin-left: -8%;
+  }
+  .social-links{
+    text-align: center;
+    float: right;
+  }
+  .banner-content-top{
+    color: #FFF;
+    font-size: 18px;
+    margin-left: 0%;
+  }
+  .banner-link{
+  margin-top: 10px;
+  border:2px solid green;
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+  background-color: transparent;
+  opacity: 1;
+  list-style: none;
+  display: inline-block;
+  padding: 5px;
+  
+  }
+  .banner-cover{
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    background-image: url(images/bk-3.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-size: 45px;
+    color:#FFF;
+    text-transform: uppercase;
+    margin-top: -25px;
+    margin-bottom: -25px;
+
+  }
+  .banner-cover-title{
+    font-family: monospace;
+    font-size: 50px;
+    margin-top: 100px;
+    color: #fff;
+  }
+  .separator{
+    clear: both;
+  }
+  #container{
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 0px auto;
+    width: 100%;
+  }
+  #main-row{
+    margin:0;
+    width: 100%;
+    height: 100%;
+
+  }
+  #col-md-3{
+    margin-left:0%;
+    width:100%;
+    padding-right:15px;
+    padding-top: 10px;
+    height: 100%;
+  }
+  .card{
+    width: 100%;
+    padding:1px;
+    margin-left:0%;
+    height: 100%;
+   /* border:2px solid green;*/
+    box-shadow: 2px 2px 5px 5px #000;
+
+  }
+  .card-header,#card-banner-cover{
+    width: auto;
+    padding: 0px;
+    background-image: url(images/bk-2.jpg);
+    background-size: cover;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 12px;
+    color:#fff;
+  }
+  .card-header >img{
+    width:
+  }
+  .card-footer{
+    text-align: center;
+  }
+  .pull-center{
+    margin-left: 10%;
+    background-color:normal;
+    width: 200px;
+    height: 50px;
+    border-radius: 1px;
+    border:1px solid green;
+    padding: 10px;
+    color: black;
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: green;
+    color: #000;
+
+  }
+  .pull-center:hover{
+    margin-left: 10%;
+    background-color:normal;
+    width: 200px;
+    height: 50px;
+    border-radius: 1px;
+    border:1px solid green;
+    padding: 10px;
+    color: #fff;
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: gray;
+    text-decoration: none;
+
+  }
+  #header-image-holder{
+    width: 100%;
+    height: 120px;
+    border-radius: 1px;
+    border-bottom:4px solid red;
+    margin-left: 0px;
+     margin-right: 0px;
+  }
+
+  /*Hover effects*/
+  .banner-link:hover{
+    margin-top: 10px;
+  border:2px solid green;
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+  background-color: green;
+  opacity: 1;
+  list-style: none;
+  display: inline-block;
+  padding: 5px;
+  box-shadow: 1px 1px 3px 3px #FFF;
+  transition: 0.5s ease-out;
+  cursor: pointer;
+  }
